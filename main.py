@@ -5,7 +5,7 @@ import time
 
 #Global variable in main
 One_time_POST=False
-Device_name="crone_a1"
+Device_name="Ahad_a66"
 ssid = "SiiconNexusStorm"
 password = "embedded123S"
 

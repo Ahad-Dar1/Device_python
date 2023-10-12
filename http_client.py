@@ -29,7 +29,7 @@ def check_device_reg(Device_name):
         "DeviceId": file_HIDD1.Device_key_HIDD1
     }
     reg_JSON_string=json.dumps(registration_data)
-    print("HIDD1 is in this scope as",file_HIDD1.Device_key_HIDD1)
+    #print("HIDD1 is in this scope as",file_HIDD1.Device_key_HIDD1)
     url=endpoints.SERVER_URL_Reg
     # Send a POST request with the JSON string
     registration_response = requests.post(url, data=reg_JSON_string, headers={'Content-Type': 'application/json'})
@@ -55,6 +55,7 @@ def check_device_reg(Device_name):
 
 
 def verification_client(Device_name):
+    #KD3='334543'
     KD3=random_key.read_random_number(Device_name)
     verification_data = {
         "DeviceName": Device_name,
